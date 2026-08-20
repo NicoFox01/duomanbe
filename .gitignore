@@ -4,8 +4,11 @@
 # ============================================================
 
 # Local
-.env
+# Variantes de env protegidas (.env.local, .env.prod, etc.)
+.env*
+!.env.example
 .venv/
+.venv-win/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -13,6 +16,14 @@ __pycache__/
 .ruff_cache/
 htmlcov/
 .coverage
+
+# Logs
+*.log
+
+# SO
+Thumbs.db
+desktop.ini
+.DS_Store
 
 # Vercel / build
 .vercel/
